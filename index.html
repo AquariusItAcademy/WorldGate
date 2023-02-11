@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <!-- media-queries -->
     <link rel="stylesheet" href="css/media-queries.css" />
+    <!-- fontawesome-icon -->
+    <link rel="stylesheet" href="css/icons/all/all.min.css" />
 
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -79,10 +81,10 @@
         <nav class="collapse navbar-collapse navbar-right" role="navigation">
           <ul id="nav" class="nav navbar-nav">
             <li class="current"><a href="#body">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#works">Work</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="http://google.com">Contact</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <!-- /main nav -->
@@ -117,22 +119,30 @@
         <div class="carousel-inner" role="listbox">
           <!-- single slide -->
           <div
-            class="item active"
+            class="item baneer active"
             style="background-image: url(img/banner.jpg)"
           >
             <div class="carousel-caption">
               <h2
                 data-wow-duration="700ms"
                 data-wow-delay="500ms"
-                class="wow bounceInDown animated"
+                class="wow bounceInDown animated headtext"
               >
-                Meet<span> Brandi</span>!
+                World Gate<span> Medical</span>!
               </h2>
-              <h3 data-wow-duration="1000ms" class="wow slideInLeft animated">
-                <span class="color">/creative</span> one page template.
+              <h3
+                data-wow-duration="1000ms"
+                class="wow slideInLeft animated headtext"
+              >
+                The <span class="color">leading</span> and
+                <span class="color">first</span> company in the field of
+                cosmetic materials and devices
               </h3>
-              <p data-wow-duration="1000ms" class="wow slideInRight animated">
-                We are a team of professionals
+              <p
+                data-wow-duration="1000ms"
+                class="wow slideInRight animated headtext"
+              >
+                The Home Of Beauty
               </p>
 
               <ul class="social-links text-center">
@@ -154,20 +164,29 @@
           <!-- end single slide -->
 
           <!-- single slide -->
-          <div class="item" style="background-image: url(img/banner.jpg)">
+          <div
+            class="item baneer_1"
+            style="background-image: url(img/banner-1.jpg)"
+          >
             <div class="carousel-caption">
               <h2
                 data-wow-duration="500ms"
                 data-wow-delay="500ms"
-                class="wow bounceInDown animated"
+                class="wow bounceInDown animated headtext"
               >
-                Meet<span> Team</span>!
+                World Gate<span> Medical</span>!
               </h2>
-              <h3 data-wow-duration="500ms" class="wow slideInLeft animated">
-                <span class="color">/creative</span> one page template.
+              <h3
+                data-wow-duration="500ms"
+                class="wow slideInLeft animated headtext"
+              >
+                <span class="color">Best</span> Products Affordable price Simply
               </h3>
-              <p data-wow-duration="500ms" class="wow slideInRight animated">
-                We are a team of professionals
+              <p
+                data-wow-duration="500ms"
+                class="wow slideInRight animated headtext"
+              >
+                The Home Of Beauty
               </p>
 
               <ul class="social-links text-center">
@@ -195,19 +214,32 @@
     <!--
         End Home SliderEnd
         ==================================== -->
-
     <!--
-        Features
+        Video
         ==================================== -->
 
-    <section id="features" class="features">
+    <section id="video_1" class="video_section">
+      <video autoplay muted loop>
+        <source src="video/2.mp4" />
+      </video>
+    </section>
+
+    <!--
+        End  Video
+        ==================================== -->
+
+    <!--
+        Products
+        ==================================== -->
+
+    <section id="products" class="features">
       <div class="container">
         <div class="row">
           <div
             class="sec-title text-center mb50 wow bounceInDown animated"
             data-wow-duration="500ms"
           >
-            <h2>Features</h2>
+            <h2>Our Products</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
           </div>
 
@@ -215,16 +247,12 @@
           <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
             <div class="service-item">
               <div class="service-icon">
-                <i class="fa fa-github fa-2x"></i>
+                <i class="fa-solid fa-syringe"></i>
               </div>
 
               <div class="service-desc">
-                <h3>Branding</h3>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore
-                </p>
+                <h3>Cosmetics</h3>
+                <p></p>
               </div>
             </div>
           </div>
@@ -238,16 +266,31 @@
           >
             <div class="service-item">
               <div class="service-icon">
-                <i class="fa fa-pencil fa-2x"></i>
+                <i class="fa-solid fa-hard-drive"></i>
               </div>
 
               <div class="service-desc">
-                <h3>Development</h3>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore
-                </p>
+                <h3>Devices</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <!-- end service item -->
+
+          <!-- service item -->
+          <div
+            class="col-md-4 wow fadeInRight"
+            data-wow-duration="500ms"
+            data-wow-delay="900ms"
+          >
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+
+              <div class="service-desc">
+                <h3>Hair Transplant</h3>
+                <p></p>
               </div>
             </div>
           </div>
@@ -265,12 +308,8 @@
               </div>
 
               <div class="service-desc">
-                <h3>Consulting</h3>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore
-                </p>
+                <h3>Surgery Instruments</h3>
+                <p></p>
               </div>
             </div>
           </div>
@@ -280,18 +319,31 @@
     </section>
 
     <!--
-        End Features
+        End Products
         ==================================== -->
 
+    <!--
+        Video
+        ==================================== -->
+
+    <section id="video_2" class="video_section">
+      <video autoplay muted loop>
+        <source src="video/1.mp4" />
+      </video>
+    </section>
+
+    <!--
+          End  Video
+          ==================================== -->
     <!--
         Our Works
         ==================================== -->
 
-    <section id="works" class="works clearfix">
+    <section id="gallery" class="works clearfix">
       <div class="container">
         <div class="row">
           <div class="sec-title text-center">
-            <h2>Works</h2>
+            <h2>Our Gallery</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
           </div>
 
@@ -315,20 +367,22 @@
               </li>
               <li>
                 <a href="javascript:;" data-filter=".branding" class="filter"
-                  >Branding</a
+                  >Cosmetics</a
                 >
               </li>
               <li>
-                <a href="javascript:;" data-filter=".web" class="filter">web</a>
+                <a href="javascript:;" data-filter=".web" class="filter"
+                  >Devices</a
+                >
               </li>
               <li>
                 <a href="javascript:;" data-filter=".logo-design" class="filter"
-                  >logo design</a
+                  >Hair Transplant</a
                 >
               </li>
               <li>
                 <a href="javascript:;" data-filter=".photography" class="filter"
-                  >photography</a
+                  >Surgery Instruments</a
                 >
               </li>
             </ul>
@@ -338,13 +392,13 @@
 
       <div class="project-wrapper">
         <figure class="mix work-item branding">
-          <img src="img/works/item-1.jpg" alt="" />
+          <img src="img/works/item-1.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-1.jpg"
+              href="img/works/item-1.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -353,13 +407,13 @@
         </figure>
 
         <figure class="mix work-item web">
-          <img src="img/works/item-2.jpg" alt="" />
+          <img src="img/works/item-2.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-2.jpg"
+              href="img/works/item-2.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -368,13 +422,13 @@
         </figure>
 
         <figure class="mix work-item logo-design">
-          <img src="img/works/item-3.jpg" alt="" />
+          <img src="img/works/item-3.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-3.jpg"
+              href="img/works/item-3.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -383,13 +437,13 @@
         </figure>
 
         <figure class="mix work-item photography">
-          <img src="img/works/item-4.jpg" alt="" />
+          <img src="img/works/item-4.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-4.jpg"
+              href="img/works/item-4.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -398,13 +452,13 @@
         </figure>
 
         <figure class="mix work-item branding">
-          <img src="img/works/item-5.jpg" alt="" />
+          <img src="img/works/item-5.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-5.jpg"
+              href="img/works/item-5.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -413,13 +467,13 @@
         </figure>
 
         <figure class="mix work-item web">
-          <img src="img/works/item-6.jpg" alt="" />
+          <img src="img/works/item-6.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-6.jpg"
+              href="img/works/item-6.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -428,13 +482,13 @@
         </figure>
 
         <figure class="mix work-item logo-design">
-          <img src="img/works/item-7.jpg" alt="" />
+          <img src="img/works/item-7.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-7.jpg"
+              href="img/works/item-7.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -443,13 +497,13 @@
         </figure>
 
         <figure class="mix work-item photography">
-          <img src="img/works/item-8.jpg" alt="" />
+          <img src="img/works/item-8.png" alt="" />
           <figcaption class="overlay">
             <a
               class="fancybox"
               rel="works"
               title="Write Your Image Caption Here"
-              href="img/works/item-8.jpg"
+              href="img/works/item-8.png"
               ><i class="fa fa-eye fa-lg"></i
             ></a>
             <h4>Labore et dolore magnam</h4>
@@ -467,14 +521,14 @@
         Meet Our Team
         ==================================== -->
 
-    <section id="team" class="team">
+    <section id="about" class="team">
       <div class="container">
         <div class="row">
           <div
             class="sec-title text-center wow fadeInUp animated"
             data-wow-duration="700ms"
           >
-            <h2>Meet Our Team</h2>
+            <h2>About us</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
           </div>
 
@@ -483,12 +537,27 @@
             data-wow-duration="500ms"
           >
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore
+              world gate medical and lab supply company has powerful technical
+              force made up of aggressive, dedicated service engineers to take
+              care of service and After Sales Service of medical equipment's in
+              field of dermatology and cosmetic (Alex hair removal machines &
+              diode laser, IPL) and all type of medical equipment's in all over
+              IRAQ - Kurdistan region. World gate medical and lab Supply was
+              found in the middle of the year 2009 which identified a market
+              need for the high quality of medical equipment in field of
+              dermatology and cosmetic in Iraq - Kurdistan Region at affordable
+              prices.
             </p>
           </div>
 
+          <div
+            class="sec-title text-center wow fadeInUp animated"
+            data-wow-duration="700ms"
+            style="margin-bottom: 15px"
+          >
+            <h2>Meet Our Team</h2>
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+          </div>
           <!-- single member -->
           <figure
             class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
@@ -501,8 +570,8 @@
                 class="img-responsive"
               />
               <figcaption class="overlay">
-                <h5>voluptatem quia voluptas</h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
+                <h5>Dr. Ahmad Ali</h5>
+                <p>General Manager</p>
                 <ul class="social-links text-center">
                   <li>
                     <a href=""><i class="fa fa-twitter fa-lg"></i></a>
@@ -516,8 +585,8 @@
                 </ul>
               </figcaption>
             </div>
-            <h4>John Filmr Doe</h4>
-            <span>Managing Director</span>
+            <h4>Dr. Ahmad Ali</h4>
+            <span>General Manager</span>
           </figure>
           <!-- end single member -->
 
@@ -534,8 +603,8 @@
                 class="img-responsive"
               />
               <figcaption class="overlay">
-                <h5>voluptatem quia voluptas</h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
+                <h5>Mr. Alan Abdulla</h5>
+                <p>Excutive Manager</p>
                 <ul class="social-links text-center">
                   <li>
                     <a href=""><i class="fa fa-twitter fa-lg"></i></a>
@@ -549,8 +618,8 @@
                 </ul>
               </figcaption>
             </div>
-            <h4>Martin Matrone</h4>
-            <span>Lead Developer</span>
+            <h4>Mr. Alan Abdulla</h4>
+            <span>Excutive Manager</span>
           </figure>
           <!-- end single member -->
 
@@ -567,8 +636,8 @@
                 class="img-responsive"
               />
               <figcaption class="overlay">
-                <h5>voluptatem quia voluptas</h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
+                <h5>Mr. Alan Sulaiman</h5>
+                <p>Sales Manager</p>
                 <ul class="social-links text-center">
                   <li>
                     <a href=""><i class="fa fa-twitter fa-lg"></i></a>
@@ -582,8 +651,8 @@
                 </ul>
               </figcaption>
             </div>
-            <h4>Steve Flaulkin</h4>
-            <span>Sr. UI Designer</span>
+            <h4>Mr. Alan Sulaiman</h4>
+            <span>Sales Manager</span>
           </figure>
           <!-- end single member -->
 
@@ -595,13 +664,13 @@
           >
             <div class="member-thumb">
               <img
-                src="img/team/member-1.png"
+                src="img/team/member-4.png"
                 alt="Team Member"
                 class="img-responsive"
               />
               <figcaption class="overlay">
-                <h5>voluptatem quia voluptas</h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
+                <h5>Eng. Siyamend Alsino</h5>
+                <p>Senior Engineer</p>
                 <ul class="social-links text-center">
                   <li>
                     <a href=""><i class="fa fa-twitter fa-lg"></i></a>
@@ -615,8 +684,72 @@
                 </ul>
               </figcaption>
             </div>
-            <h4>John Filmr Doe</h4>
-            <span>Managing Director</span>
+            <h4>Eng. Siyamend Alsino</h4>
+            <span>Senior Engineer</span>
+          </figure>
+          <!-- end single member -->
+          <!-- single member -->
+          <figure
+            class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+            data-wow-duration="500ms"
+            data-wow-delay="900ms"
+          >
+            <div class="member-thumb">
+              <img
+                src="img/team/member-5.png"
+                alt="Team Member"
+                class="img-responsive"
+              />
+              <figcaption class="overlay">
+                <h5>Mr. Farhan Ramadan</h5>
+                <p>Sales Representative</p>
+                <ul class="social-links text-center">
+                  <li>
+                    <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-facebook fa-lg"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-google-plus fa-lg"></i></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </div>
+            <h4>Mr. Farhan Ramadan</h4>
+            <span>Sales Representative</span>
+          </figure>
+          <!-- end single member -->
+          <!-- single member -->
+          <figure
+            class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+            data-wow-duration="500ms"
+            data-wow-delay="900ms"
+          >
+            <div class="member-thumb">
+              <img
+                src="img/team/member-6.png"
+                alt="Team Member"
+                class="img-responsive"
+              />
+              <figcaption class="overlay">
+                <h5>Mr. Badr Mahmoud</h5>
+                <p>Accountant</p>
+                <ul class="social-links text-center">
+                  <li>
+                    <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-facebook fa-lg"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-google-plus fa-lg"></i></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </div>
+            <h4>Mr. Badr Mahmoud</h4>
+            <span>Accountant</span>
           </figure>
           <!-- end single member -->
         </div>
@@ -847,9 +980,8 @@
             <div class="footer-single">
               <img src="img/footer-logo.png" alt="" />
               <p>
-                eusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Main office: Iraq – Erbil – Mahmoud AlHafeed Square – Qassab
+                Building – 1st Floor
               </p>
             </div>
           </div>
@@ -865,7 +997,6 @@
                 <input type="text" name="subscribe" id="subscribe" />
                 <input type="submit" value="&#8594;" id="subs" />
               </form>
-              <p>eusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
 
@@ -875,12 +1006,28 @@
             data-wow-delay="600ms"
           >
             <div class="footer-single">
-              <h6>Explore</h6>
+              <h6>Contact</h6>
               <ul>
-                <li><a href="#">Inside Us</a></li>
-                <li><a href="#">Flickr</a></li>
-                <li><a href="#">Google</a></li>
-                <li><a href="#">Forum</a></li>
+                <li>
+                  <p>
+                    Erbil:<br />
+                    <a href="tel:00964662893903">+964 662 893 903</a><br />
+                    <a href="tel:009647512354023">+964 751 235 4023</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Service:<br />
+                    <a href="tel:009647514343415">+964 751 434 3415</a><br />
+                    <a href="tel:009647828386448">+964 782 838 6448</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Sulaimanya:<br />
+                    <a href="tel:009647508528458">+964 750 852 8458</a><br />
+                  </p>
+                </li>
               </ul>
             </div>
           </div>
@@ -891,12 +1038,27 @@
             data-wow-delay="900ms"
           >
             <div class="footer-single">
-              <h6>Support</h6>
               <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Market Blog</a></li>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Pressroom</a></li>
+                <li>
+                  <p>
+                    Dohuk:<br />
+                    <a href="tel:009647503032672">+964 750 303 2672</a><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Baghdad:<br />
+                    <a href="tel:009647725111466">+964 772 511 1466</a><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Leave a message:<br />
+                    <a href="mailto:info@worldgate-medical.com"
+                      >info@worldgate-medical.com</a
+                    >
+                  </p>
+                </li>
               </ul>
             </div>
           </div>
