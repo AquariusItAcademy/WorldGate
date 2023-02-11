@@ -288,15 +288,22 @@ body > section,
 }
 
 .social-links li a {
-  color: #ffffff4d;
+  color: var(--color-light);
+  text-shadow: 0 1px 4px var(--color-1);
+  font-size: 2em;
   display: block;
   margin: 0 6px;
 }
 
 .social-links li a:hover {
-  color: #fff;
+  color: var(--color-3);
 }
-
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
 .carousel-indicators {
   bottom: 10px;
   left: inherit;
