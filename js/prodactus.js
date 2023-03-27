@@ -349,7 +349,38 @@ var Devices = [
       class: "cosmetic",
     },
   ],
-  employes = [],
+  employees = [
+    {
+      name: "Alan Sulaiman",
+      postion: "Sales Manager",
+      city: "Erbil",
+    },
+    {
+      name: "Abdulsalam Muhammad",
+      postion: "Sales Manager",
+      city: "Erbil",
+    },
+    {
+      name: "Atayyb Alzohery",
+      postion: "Sales Manager",
+      city: "Erbil",
+    },
+    {
+      name: "Jumaa Othman",
+      postion: "Sales Manager",
+      city: "Erbil",
+    },
+    {
+      name: "Yehya Ahmad",
+      postion: "Sales Manager",
+      city: "Erbil",
+    },
+    {
+      name: "Siyamend Alsino",
+      postion: "Senior engineer",
+      city: "Erbil",
+    },
+  ],
   maps = [
     {
       city: "Erbil",
@@ -360,7 +391,8 @@ var Devices = [
     {
       city: "Baghdad",
       map: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3333.9933630776723!2d44.338724684804156!3d33.31898898081177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDE5JzA4LjQiTiA0NMKwMjAnMTEuNSJF!5e0!3m2!1sar!2siq!4v1677451825590!5m2!1sar!2siq",
-      address: "Baghdad, Al-Mansour, Tanque Street, Near the embassy of Venezuel",
+      address:
+        "Baghdad, Al-Mansour, Tanque Street, Near the embassy of Venezuel",
       number: "+964 774 443 0303",
     },
     {
@@ -383,6 +415,7 @@ var Devices = [
     },
   ],
   prodactuscontainer = document.querySelector("#Devices_Container"),
+  employeescontainer = document.querySelector("#Employees_Container"),
   mapscontainer = document.querySelector("#Map_Container");
 Devices.forEach((device) => {
   prodactuscontainer.innerHTML += `
@@ -458,7 +491,30 @@ Cosmetics.forEach((cosmetic) => {
   </figure>
   `;
 });
-maps.forEach(map => {
+employees.forEach((employee)=>{
+  employeescontainer.innerHTML += `
+    <!-- single member -->
+    <figure
+      class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+      data-wow-duration="500ms"
+    >
+      <div class="member-thumb">
+        <img
+          src="img/team/${employee.name}.png"
+          alt="Team Member"
+          class="img-responsive"
+        />
+        <figcaption class="overlay">
+          <p>${employee.postion}</p>
+          <h5>${employee.city}</h5>
+        </figcaption>
+      </div>
+      <h4>${employee.name}</h4>
+    </figure>
+    <!-- end single member -->
+  `;
+});
+maps.forEach((map) => {
   mapscontainer.innerHTML += `
     <div class="branch ${map.city}">
             <div class="hover-map">
