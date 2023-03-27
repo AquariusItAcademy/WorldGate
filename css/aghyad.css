@@ -258,11 +258,15 @@ section .mapg .contact-address p span {
   flex-direction: column;
 }
 #arrowSlideAq {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 50%;
-  right: 50px;
+  left: 50%;
   z-index: 99999;
-  transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
 }
 #arrowSlideAq li {
   background-color: #333333;
