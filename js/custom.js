@@ -5,7 +5,6 @@
 jQuery(window).load(function () {
   $("#preloader").fadeOut("slow");
 });
-
 $(document).ready(function () {
   /* ========================================================================= */
   /*	Menu item highlighting

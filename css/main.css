@@ -405,9 +405,11 @@ body > section,
 }
 
 .work-item {
-  float: left;
-  width: 25%;
+  /* float: left; */
+  /* width: 25%; */
   position: relative;
+  background-color: var(--color-light);
+  border-radius: 30px;
 }
 
 .work-item > img {
@@ -419,7 +421,7 @@ body > section,
 }
 
 .overlay {
-  background-color: #0eb493e6;
+  background-color: #00a75ad9;;
   text-align: center;
   position: absolute;
   left: 0;
@@ -427,7 +429,7 @@ body > section,
   width: 100%;
   height: 100%;
   color: #fff;
-
+  border-radius: 30px;
   opacity: 0;
   filter: alpha(opacity=0);
 
@@ -476,6 +478,23 @@ body > section,
 .work-item .overlay p {
   font-size: 14px;
   line-height: 24px;
+}
+
+.work-item .overlay ul {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+padding: 10px;
+margin-top: 15px;
+}
+.work-item .overlay ul li {
+
+}
+.work-item .overlay ul li i {
+  font-size: 1.50em;
+  line-height: .05em;
+  vertical-align: -0.075em;
 }
 
 /*=========================================

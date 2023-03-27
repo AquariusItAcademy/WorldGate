@@ -49,7 +49,6 @@
       <img src="img/preloader.gif" alt="Preloader" />
     </div>
     <!-- end preloader -->
-
     <!-- 
         Fixed Navigation
         ==================================== -->
@@ -70,9 +69,11 @@
 
           <!-- logo -->
           <a class="navbar-brand" href="#body">
-            <h1 id="logo">
-              <img src="img/logo.png" alt="Brandi" />
-            </h1>
+            <img
+              src="img/logo.png"
+              style="max-height: 50px; object-fit: contain"
+              alt="worldgate-medical"
+            />
           </a>
           <!-- /logo -->
         </div>
@@ -84,7 +85,6 @@
         >
           <ul id="nav" class="nav navbar-nav">
             <li class="current"><a href="#body">Home</a></li>
-            <!-- <li><a href="#products">Products</a></li> -->
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -133,12 +133,9 @@
             data-target="#carousel-example-generic"
             data-slide-to="0"
             class="active"
-          >
-            <i class="fa-regular fa-chevrons-right" style="color: red;"></i>
-          </li>
-          <li data-target="#carousel-example-generic" data-slide-to="1">
-            <i class="fa-regular fa-chevrons-right"></i>
-          </li>
+          ></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
         <!-- End Indicators bullet -->
 
@@ -161,6 +158,37 @@
             </div>
           </div>
           <!-- end single slide -->
+          <!-- single slide -->
+          <div
+            class="item baneer active"
+            style="background-image: url(img/banner.jpg)"
+          >
+            <div class="carousel-caption">
+              <h2
+                data-wow-duration="700ms"
+                data-wow-delay="500ms"
+                class="wow bounceInDown animated headtext"
+              >
+                World Gate<span> Medical</span>!
+              </h2>
+              <h3
+                data-wow-duration="1000ms"
+                class="wow slideInLeft animated headtext"
+              >
+                The <span class="color">leading</span> and
+                <span class="color">first</span> company in the field of
+                cosmetic materials and devices
+              </h3>
+              <p
+                data-wow-duration="1000ms"
+                class="wow slideInRight animated headtext"
+              >
+                The Home Of Beauty
+              </p>
+            </div>
+          </div>
+          <!-- end single slide -->
+
           <!-- single slide -->
           <div
             class="item baneer_1"
@@ -197,94 +225,9 @@
     <!--
         End Home SliderEnd
         ==================================== -->
-    <!--
-
-
-    
-        Products
-        ==================================== -->
-
-    <!-- <section id="products" class="features">
-      <div class="container">
-        <div class="row">
-          <div
-            class="sec-title text-center mb50 wow bounceInDown animated"
-            data-wow-duration="500ms"
-          >
-            <h2>Our Products</h2>
-            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-
-          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa-solid fa-syringe"></i>
-              </div>
-
-              <div class="service-desc">
-                <h3>Cosmetics</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp"
-            data-wow-duration="500ms"
-            data-wow-delay="500ms"
-          >
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa-solid fa-hard-drive"></i>
-              </div>
-
-              <div class="service-desc">
-                <h3>Devices</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInRight"
-            data-wow-duration="500ms"
-            data-wow-delay="900ms"
-          >
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa-solid fa-shield-heart"></i>
-              </div>
-
-              <div class="service-desc">
-                <h3>Hair Transplant</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInRight"
-            data-wow-duration="500ms"
-            data-wow-delay="900ms"
-          >
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa fa-bullhorn fa-2x"></i>
-              </div>
-
-              <div class="service-desc">
-                <h3>Surgery Instruments</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!--
-        End Products
-        ==================================== -->
-
-    <!--
-        Our Works
+        Our Gallery
         ==================================== -->
 
     <section id="gallery" class="works clearfix">
@@ -293,14 +236,6 @@
           <div class="sec-title text-center">
             <h2>Our Gallery</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-
-          <div class="sec-sub-title text-center">
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore
-            </p>
           </div>
 
           <div
@@ -323,7 +258,7 @@
                   >Devices</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a href="javascript:;" data-filter=".logo-design" class="filter"
                   >Hair Transplant</a
                 >
@@ -332,45 +267,12 @@
                 <a href="javascript:;" data-filter=".photography" class="filter"
                   >Surgery Instruments</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
       </div>
-      <div id="Devices_Container" class="project-wrapper">
-        <figure class="mix work-item branding">
-          <img src="img/works/item-1.png" alt="" />
-          <figcaption class="overlay">
-            <h4>Device Name</h4>
-            <p>Device Info</p>
-            <ul>
-              <li>
-                <a
-                  class="fancybox"
-                  rel="works"
-                  title="Write Your Image Caption Here"
-                  href="img/works/item-1.png"
-                  ><i class="fa fa-eye fa-lg"></i
-                ></a>
-              </li>
-              <li>
-                <a class="fancybox" rel="works" title="Order Now" href=""
-                  ><i class="fa-brands fa-whatsapp"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="fancybox"
-                  rel="works"
-                  title="Download device catalog"
-                  href=""
-                  ><i class="fa-sharp fa-solid fa-circle-down"></i
-                ></a>
-              </li>
-            </ul>
-          </figcaption>
-        </figure>
-      </div>
+      <div id="Devices_Container" class="project-wrapper"></div>
     </section>
 
     <!--
@@ -418,37 +320,27 @@
             <h2>Meet Our Team</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
           </div>
-          <!-- single member -->
-          <figure
-            class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-            data-wow-duration="500ms"
-          >
-            <div class="member-thumb">
-              <img
-                src="img/team/member-1.png"
-                alt="Team Member"
-                class="img-responsive"
-              />
-              <figcaption class="overlay">
-                <h5>Dr. Ahmad Ali</h5>
-                <p>General Manager</p>
-                <ul class="social-links text-center">
-                  <li>
-                    <a href=""><i class="fa fa-twitter fa-lg"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus fa-lg"></i></a>
-                  </li>
-                </ul>
-              </figcaption>
-            </div>
-            <h4>Dr. Ahmad Ali</h4>
-            <span>General Manager</span>
-          </figure>
-          <!-- end single member -->
+          <div>
+            <!-- single member -->
+            <figure
+              class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+              data-wow-duration="500ms"
+            >
+              <div class="member-thumb">
+                <img
+                  src="img/team/Abdulsalam Muhammad.png"
+                  alt="Team Member"
+                  class="img-responsive"
+                />
+                <figcaption class="overlay">
+                  <p>General Manager</p>
+                  <h5>Erbil</h5>
+                </figcaption>
+              </div>
+              <h4>Dr. Ahmad Ali</h4>
+            </figure>
+            <!-- end single member -->
+          </div>
         </div>
       </div>
     </section>
@@ -545,43 +437,36 @@
             <h2>Contact us</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
           </div>
-
+          <ul id="emails">
+            <li>
+              <h5>
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email Manager:</span>
+              </h5>
+              <a href="mailto:ahmad.ali@worldgate-medical.com"
+                >ahmad.ali@worldgate-medical.com</a
+              >
+            </li>
+            <li>
+              <h5>
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email Sales:</span>
+              </h5>
+              <a href="mailto:sales@worldgate-medical.com"
+                >sales@worldgate-medical.com</a
+              >
+            </li>
+            <li>
+              <h5>
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email Service:</span>
+              </h5>
+              <a href="mailto:siyamend.alsino@worldgate-medical.com"
+                >siyamend.alsino@worldgate-medical.com</a
+              >
+            </li>
+          </ul>
           <div class="ac">
-            <!-- contact address -->
-            <!-- <div
-          class="col-lg-6 col-md-6 col-sm-4 col-xs-12 wow fadeInLeft animated"
-          data-wow-duration="500ms"
-          >
-            <div class="contact-address">
-              <h3>Contact Information :</h3>
-              <p>
-                address:
-                <span>
-                  Iraq - Erbil - Mahmoud AlHafeed Square Qessab Building - 1st Floor
-                </span>
-              </p>
-              <p>
-                Sales:
-                <a href="mailto:sales@worldgate-medical.com"
-                  >sales@worldgate-medical.com</a
-                >
-              </p>
-              <p>
-                Services:
-                <a href="mailto:siyamend.alsino@worldgate-medical.com"
-                  >siyamend.alsino@worldgate-medical.com</a
-                >
-              </p>
-              <p>
-                Mobile:
-                <a href="tel:+9647512354023">+964 751 235 4023</a></p>
-              <p>
-                Mobile:
-                <a href="tel:+964662893903"> +964 662 893 903</a></p>
-            </div>
-          </div> -->
-            <!-- end contact address -->
-
             <!-- contact form -->
             <div
               class="col-lg-10 col-md-11 col-sm-12 col-xs-12 wow fadeInDown animated"
@@ -591,7 +476,6 @@
               <div class="contact-form">
                 <h3>Leave a message!</h3>
                 <form action="#" id="contact-form">
-                  <!-- <div class="input-group name-email"> -->
                   <div class="input-field">
                     <input
                       type="text"
@@ -610,7 +494,6 @@
                       class="form-control"
                     />
                   </div>
-                  <!-- </div> -->
                   <div class="input-group">
                     <textarea
                       name="message"
@@ -655,40 +538,12 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="mailto:ahmad.ali@worldgate-medical.com"
-                    >Email Manager:<br />ahmad.ali@worldgate-medical.com</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@worldgate-medical.com"
-                    >Email Sales:<br />sales@worldgate-medical.com</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:siyamend.alsino@worldgate-medical.com"
-                    >Email Service:<br />siyamend.alsino@worldgate-medical.com</a
-                  >
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
         <!-- end contact form -->
-
-        <!-- footer social links -->
-
-        <!-- end footer social links -->
       </div>
-
-      <!-- Google map -->
-      <div id="Map_Container" class="mapg"></div>
-      <!-- End Google map -->
     </section>
-    <!--
-        End Contact Us
+    <!-- End Contact Us
         ==================================== -->
     <footer class="foote">
       <div class="contanir">
@@ -698,9 +553,9 @@
           </div>
           <div class="location">
             <p>
-              Main office: Iraq – Erbil – Mahmoud AlHafeed Square
-              <br />
-              – Qassab Building – 1st Floor
+              Main office: <br />
+              Iraq,Erbil,Mahmoud AlHafeed Square <br />
+              - Qassab Building,1st Floor
             </p>
           </div>
         </div>
@@ -755,6 +610,29 @@
                 </li>
               </ul>
             </div>
+            <!-- footer social links -->
+            <ul
+              class="social-links"
+              style="margin: 0; display: flex; flex-direction: column"
+            >
+              <li>
+                <a href="https://www.youtube.com/@worldgate-medical9709"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100064094285792"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/worldgatemedical/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- end footer social links -->
           </div>
         </div>
       </div>

@@ -61,9 +61,9 @@
 
 /* works */
 
-.work-item {
+/* .work-item {
   width: 33%;
-}
+} */
 
 /* team */
 
@@ -172,8 +172,8 @@ background-position: center top !important;
 /* works */
 
 .work-item {
-  left: 5% !important;
-  width: 90%;
+  /* left: 5% !important; */
+  /* width: 90%; */
 }
 
 /* team */
@@ -259,7 +259,7 @@ background-position: center top !important;
 
 .work-item {
   left: inherit !important;
-  width: 50%;
+  /* width: 50%; */
 }
 
 }
