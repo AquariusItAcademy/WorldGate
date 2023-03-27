@@ -546,35 +546,35 @@ maps.forEach((map) => {
     </div>
   `;
 });
-if ((window.innerWidth || document.documentElement.clientWidth) <= 800) {
-  videoEl.forEach((video) => {
-    video.remove();
-  });
-  lastSlid.forEach((slide, i) => {
-    if (i == 1) {
-      slide.setAttribute("data-slide-to", "0");
-    }
-    if (i == 2) {
-      slide.setAttribute("data-slide-to", "1");
-    }
-  });
-  lastElSlid.forEach((el, i) => {
-    if (i == 0) {
-      el.classList.remove("baneer");
-    }
-    if (i == 1) {
-      if (el.classList.contains("baneer_1")) {
-        el.classList.remove("baneer_1");
-        el.classList.add("baneer");
-      }
-    } else if (i == 2) {
-      if (el.classList.contains("baneer_2")) {
-        el.classList.remove("baneer_2");
-        el.classList.add("baneer_1");
-      }
-    }
-  });
-}
+// if ((window.innerWidth || document.documentElement.clientWidth) <= 800) {
+//   videoEl.forEach((video) => {
+//     video.remove();
+//   });
+//   lastSlid.forEach((slide, i) => {
+//     if (i == 1) {
+//       slide.setAttribute("data-slide-to", "0");
+//     }
+//     if (i == 2) {
+//       slide.setAttribute("data-slide-to", "1");
+//     }
+//   });
+//   lastElSlid.forEach((el, i) => {
+//     if (i == 0) {
+//       el.classList.remove("baneer");
+//     }
+//     if (i == 1) {
+//       if (el.classList.contains("baneer_1")) {
+//         el.classList.remove("baneer_1");
+//         el.classList.add("baneer");
+//       }
+//     } else if (i == 2) {
+//       if (el.classList.contains("baneer_2")) {
+//         el.classList.remove("baneer_2");
+//         el.classList.add("baneer_1");
+//       }
+//     }
+//   });
+// }
 var clickEvent = new MouseEvent("click", {
   view: window,
   bubbles: true,
