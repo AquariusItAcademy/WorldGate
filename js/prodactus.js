@@ -413,11 +413,9 @@ var Devices = [
   ],
   prodactuscontainer = document.querySelector("#Devices_Container"),
   employeescontainer = document.querySelector("#Employees_Container"),
-  videoEl = document.querySelectorAll(".videoLogo");
-arrowsSlide = document.querySelectorAll(".arrow");
-lastSlid = document.querySelectorAll(".AqSlid");
-lastElSlid = document.querySelectorAll(".AqElSlid");
-mapscontainer = document.querySelector("#Map_Container");
+  arrowsSlide = document.querySelectorAll(".arrow"),
+  lastSlid = document.querySelectorAll(".AqSlid"),
+  mapscontainer = document.querySelector("#Map_Container");
 
 Devices.forEach((device) => {
   prodactuscontainer.innerHTML += `
@@ -546,35 +544,6 @@ maps.forEach((map) => {
     </div>
   `;
 });
-// if ((window.innerWidth || document.documentElement.clientWidth) <= 800) {
-//   videoEl.forEach((video) => {
-//     video.remove();
-//   });
-//   lastSlid.forEach((slide, i) => {
-//     if (i == 1) {
-//       slide.setAttribute("data-slide-to", "0");
-//     }
-//     if (i == 2) {
-//       slide.setAttribute("data-slide-to", "1");
-//     }
-//   });
-//   lastElSlid.forEach((el, i) => {
-//     if (i == 0) {
-//       el.classList.remove("baneer");
-//     }
-//     if (i == 1) {
-//       if (el.classList.contains("baneer_1")) {
-//         el.classList.remove("baneer_1");
-//         el.classList.add("baneer");
-//       }
-//     } else if (i == 2) {
-//       if (el.classList.contains("baneer_2")) {
-//         el.classList.remove("baneer_2");
-//         el.classList.add("baneer_1");
-//       }
-//     }
-//   });
-// }
 var clickEvent = new MouseEvent("click", {
   view: window,
   bubbles: true,
