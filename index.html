@@ -128,21 +128,25 @@
         data-ride="carousel"
       >
         <!-- Indicators bullet -->
-        <ol class="carousel-indicators">
+        <ul id="arrowSlideAq">
+          <li class="arrow"><i class="fa-solid fa-chevron-left"></i></li>
+          <li class="arrow"><i class="fa-solid fa-chevron-right"></i></li>
+        </ul>
+        <ol class="carousel-indicators" style="visibility: hidden;">
           <li
             data-target="#carousel-example-generic"
             data-slide-to="0"
-            class="active"
+            class="videoLogo AqSlid active"
           ></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li class="AqSlid" data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li class="AqSlid" data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
         <!-- End Indicators bullet -->
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <!-- single slide -->
-          <div class="item baneer active" style="position: relative">
+          <div class="videoLogo AqElSlid item baneer active" style="position: relative">
             <div
               style="
                 position: absolute;
@@ -153,14 +157,14 @@
               "
             >
               <video autoplay muted loop>
-                <source src="video/2.mp4" />
+                <source src="video/2.mp4"/>
               </video>
             </div>
           </div>
           <!-- end single slide -->
           <!-- single slide -->
           <div
-            class="item baneer active"
+            class="item AqElSlid baneer_1"
             style="background-image: url(img/banner.jpg)"
           >
             <div class="carousel-caption">
@@ -191,7 +195,7 @@
 
           <!-- single slide -->
           <div
-            class="item baneer_1"
+            class="item AqElSlid baneer_2"
             style="background-image: url(img/banner-1.jpg)"
           >
             <div class="carousel-caption">
@@ -520,6 +524,7 @@
               </ul>
             </div>
           </div>
+          <div id="Map_Container" class="mapg"></div>
         </div>
         <!-- end contact form -->
       </div>

@@ -1,6 +1,3 @@
-// Cosmetic
-// device
-//employ
 var Devices = [
     {
       name: "EpCare-Zenith",
@@ -416,12 +413,17 @@ var Devices = [
   ],
   prodactuscontainer = document.querySelector("#Devices_Container"),
   employeescontainer = document.querySelector("#Employees_Container"),
-  mapscontainer = document.querySelector("#Map_Container");
+  videoEl = document.querySelectorAll(".videoLogo");
+arrowsSlide = document.querySelectorAll(".arrow");
+lastSlid = document.querySelectorAll(".AqSlid");
+lastElSlid = document.querySelectorAll(".AqElSlid");
+mapscontainer = document.querySelector("#Map_Container");
+
 Devices.forEach((device) => {
   prodactuscontainer.innerHTML += `
   <figure class="mix work-item ${device.class}">
     <img src="img/produacts/diveces/${device.img}.png" alt="${device.img}" />
-    <figcaption class="overlay">
+    <figcaption class="cardAq overlay">
       <h4>${device.name}</h4>
       <p>${device.type}</p>
       <ul>
@@ -458,7 +460,7 @@ Cosmetics.forEach((cosmetic) => {
   prodactuscontainer.innerHTML += `
   <figure class="mix work-item ${cosmetic.class}">
     <img src="img/produacts/cosmatics/${cosmetic.img}.png" alt="${cosmetic.img}" />
-    <figcaption class="overlay">
+    <figcaption class="cardAq overlay">
       <h4>${cosmetic.name}</h4>
       <p>${cosmetic.type}</p>
       <ul>
@@ -491,7 +493,7 @@ Cosmetics.forEach((cosmetic) => {
   </figure>
   `;
 });
-employees.forEach((employee)=>{
+employees.forEach((employee) => {
   employeescontainer.innerHTML += `
     <!-- single member -->
     <figure
@@ -504,8 +506,8 @@ employees.forEach((employee)=>{
           alt="Team Member"
           class="img-responsive"
         />
-        <figcaption class="overlay">
-          <p>${employee.postion}</p>
+        <figcaption class="cardAq overlay">
+          <h3><strong>${employee.postion}</strong></h3>
           <h5>${employee.city}</h5>
         </figcaption>
       </div>
@@ -543,4 +545,62 @@ maps.forEach((map) => {
             </div>
     </div>
   `;
+});
+if ((window.innerWidth || document.documentElement.clientWidth) <= 800) {
+  videoEl.forEach((video) => {
+    video.remove();
+  });
+  lastSlid.forEach((slide, i) => {
+    if (i == 1) {
+      slide.setAttribute("data-slide-to", "0");
+    }
+    if (i == 2) {
+      slide.setAttribute("data-slide-to", "1");
+    }
+  });
+  lastElSlid.forEach((el, i) => {
+    if (i == 0) {
+      el.classList.remove("baneer");
+    }
+    if (i == 1) {
+      if (el.classList.contains("baneer_1")) {
+        el.classList.remove("baneer_1");
+        el.classList.add("baneer");
+      }
+    } else if (i == 2) {
+      if (el.classList.contains("baneer_2")) {
+        el.classList.remove("baneer_2");
+        el.classList.add("baneer_1");
+      }
+    }
+  });
+}
+var clickEvent = new MouseEvent("click", {
+  view: window,
+  bubbles: true,
+  cancelable: false,
+});
+arrowsSlide[0].addEventListener("click", () => {
+  lastSlid.forEach((slide) => {
+    if (slide.classList.contains("active")) {
+      let el = slide.nextElementSibling;
+      if (el == null) {
+        lastSlid[0].dispatchEvent(clickEvent);
+      } else {
+        el.dispatchEvent(clickEvent);
+      }
+    }
+  });
+});
+arrowsSlide[1].addEventListener("click", () => {
+  lastSlid.forEach((slide) => {
+    if (slide.classList.contains("active")) {
+      let el = slide.previousElementSibling;
+      if (el == null) {
+        lastSlid[2].dispatchEvent(clickEvent);
+      } else {
+        el.dispatchEvent(clickEvent);
+      }
+    }
+  });
 });
