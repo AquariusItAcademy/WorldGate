@@ -149,7 +149,7 @@ section .mapg .branch {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 section .mapg .hover-map {
   transition: 0.9s;
