@@ -36,13 +36,6 @@ var Devices = [
       class: "device",
     },
     {
-      name: "Somke evacuator(DS-2000EN)",
-      img: "Somkeevacuator",
-      pdf: "Somkeevacuator",
-      type: "",
-      class: "device",
-    },
-    {
       name: "Smaxel co2 laser",
       img: "Smaxelco2laser",
       pdf: "Smaxelco2laser",
@@ -130,6 +123,13 @@ var Devices = [
       name: "Med-Jet",
       img: "Med-Jet",
       pdf: "Med-Jet",
+      type: "",
+      class: "device",
+    },
+    {
+      name: "Utims",
+      img: "Utims",
+      pdf: "Utims",
       type: "",
       class: "device",
     },
@@ -404,12 +404,12 @@ var Devices = [
       address: "Dohuk, Nohdra, Branch opposite to first Iraq bank new building",
       number: "+964 750 303 2672",
     },
-    {
-      city: "Diyala",
-      map: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3245.3008714153634!2d45.453234684744075!3d35.57096498022013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDM0JzE1LjUiTiA0NcKwMjcnMDMuOCJF!5e0!3m2!1sar!2siq!4v1677451935912!5m2!1sar!2siq",
-      address: "Diyala, Al Husseniniya Street",
-      number: "+964 772 511 1466",
-    },
+    // {
+    //   city: "Diyala",
+    //   map: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3245.3008714153634!2d45.453234684744075!3d35.57096498022013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDM0JzE1LjUiTiA0NcKwMjcnMDMuOCJF!5e0!3m2!1sar!2siq!4v1677451935912!5m2!1sar!2siq",
+    //   address: "Diyala, Al Husseniniya Street",
+    //   number: "+964 772 511 1466",
+    // },
   ],
   prodactuscontainer = document.querySelector("#Devices_Container"),
   employeescontainer = document.querySelector("#Employees_Container"),
@@ -573,3 +573,58 @@ arrowsSlide[1].addEventListener("click", () => {
     }
   });
 });
+
+// var list = [
+//     "AlesteCombi",
+//     "Ashley",
+//     "Cryo-ZetAirCooling",
+//     "Einxelx2",
+//     "Endolift",
+//     "EpCare-Zenith",
+//     "Erica",
+//     "Hipro-V",
+//     "HRZ-6000Diodelaser",
+//     "Hydrafacial",
+//     "J-Plasma",
+//     "LD2DiodeLaser",
+//     "LipoSurg",
+//     "Med-Jet",
+//     "OrchestraCool",
+//     "Plasmabt",
+//     "Q10",
+//     "Smaxelco2laser",
+//     "Utims",
+//   ],
+//   list2 = [
+//     "AlesteCombi",
+//     "Ashley",
+//     "Cryo-ZetAirCooling",
+//     "Einxelx2",
+//     "Endolift",
+//     "EpCare-Zenith",
+//     "Erica",
+//     "Hipro-V",
+//     "HRZ-6000Diodelaser",
+//     "Hydrafacial",
+//     "J-Plasma",
+//     "LD2DiodeLaser",
+//     "LipoSurg",
+//     "Med-Jet",
+//     "OrchestraCool",
+//     "Plasmabt",
+//     "Q10",
+//     "Smaxelco2laser",
+//     "Utims",
+//   ];
+// var list3 = new Set();
+// list.forEach((l1) => {
+//     if (!list2.includes(l1)) {
+//       list3.add(l1+".pdf");
+//     }
+// });
+// list2.forEach((l2) => {
+//     if (!list.includes(l2)) {
+//       list3.add(l2+".png");
+//     }
+// });
+// console.log(list3);
