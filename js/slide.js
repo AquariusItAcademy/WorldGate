@@ -15,6 +15,19 @@ onload = () => {
   textEl[1].classList.add("cRight");
   textEl[2].classList.add("cLeft");
 };
+if (screen.width <= 768) {
+  slide.forEach((s, i) => {
+    var slideVideo = s.querySelector("video");
+    if (slideVideo != null) {
+      slide[i].remove();
+      (header = document.querySelector("header")),
+        (slider_container = document.querySelector(".slider-container")),
+        (slidersArrow = document.querySelectorAll(".slidersArrow")),
+        (slide = document.querySelectorAll(".slide")),
+        (textEl = document.querySelectorAll(".slide ul li"));
+    }
+  });
+}
 setTimeout(() => {
   timer = setInterval(() => {
     slidersArrow[1].click();
