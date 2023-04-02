@@ -133,6 +133,20 @@ var Devices = [
       type: "",
       class: "device",
     },
+    {
+      name: "Endolift laser mart 1500",
+      img: "Endoliftlasermart1500",
+      pdf: "Endoliftlasermart1500",
+      type: "",
+      class: "device",
+    },
+    {
+      name: "Smoke Evacuator",
+      img: "SmokeEvacuator",
+      pdf: "SmokeEvacuator",
+      type: "",
+      class: "device",
+    },
   ],
   Cosmetics = [
     {
@@ -351,31 +365,37 @@ var Devices = [
       name: "Alan Sulaiman",
       postion: "Sales Manager",
       city: "Erbil",
+      num: "+964 751 235 4023",
     },
     {
       name: "Abdulsalam Muhammad",
       postion: "Sales Manager",
-      city: "Erbil",
+      city: "Sulimanya",
+      num: "+964 750 852 8458",
     },
     {
       name: "Atayyb Alzohery",
       postion: "Sales Manager",
-      city: "Erbil",
+      city: "Diyala",
+      num: "+964 772 511 1466",
     },
     {
       name: "Jumaa Othman",
       postion: "Sales Manager",
-      city: "Erbil",
+      city: "Baghdad",
+      num: "+964 774 443 0303",
     },
     {
       name: "Yehya Ahmad",
       postion: "Sales Manager",
-      city: "Erbil",
+      city: "Dohuk",
+      num: "+964 750 303 2672",
     },
     {
       name: "Siyamend Alsino",
       postion: "Senior engineer",
       city: "Erbil",
+      num: "+964 782 838 6448",
     },
   ],
   maps = [
@@ -507,6 +527,7 @@ employees.forEach((employee) => {
         <figcaption class="cardAq overlay">
           <h3><strong>${employee.postion}</strong></h3>
           <h5>${employee.city}</h5>
+          <h5><a href="tel:${employee.num}" style="color: #f0f0f0;">${employee.num}</a></h5>
         </figcaption>
       </div>
       <h4>${employee.name}</h4>
@@ -544,87 +565,38 @@ maps.forEach((map) => {
     </div>
   `;
 });
-var clickEvent = new MouseEvent("click", {
-  view: window,
-  bubbles: true,
-  cancelable: false,
-});
-arrowsSlide[0].addEventListener("click", () => {
-  lastSlid.forEach((slide) => {
-    if (slide.classList.contains("active")) {
-      let el = slide.nextElementSibling;
-      if (el == null) {
-        lastSlid[0].dispatchEvent(clickEvent);
-      } else {
-        el.dispatchEvent(clickEvent);
-      }
-    }
-  });
-});
-arrowsSlide[1].addEventListener("click", () => {
-  lastSlid.forEach((slide) => {
-    if (slide.classList.contains("active")) {
-      let el = slide.previousElementSibling;
-      if (el == null) {
-        lastSlid[2].dispatchEvent(clickEvent);
-      } else {
-        el.dispatchEvent(clickEvent);
-      }
-    }
-  });
-});
+// var clickEvent = new MouseEvent("click", {
+//   view: window,
+//   bubbles: true,
+//   cancelable: false,
+// });
+// arrowsSlide[0].addEventListener("click", () => {
+//   lastSlid.forEach((slide) => {
+//     if (slide.classList.contains("active")) {
+//       let el = slide.nextElementSibling;
+//       if (el == null) {
+//         lastSlid[0].dispatchEvent(clickEvent);
+//         lastSlid[0].dispatchEvent(clickEvent);
+//       } else {
+//         el.dispatchEvent(clickEvent);
+//         el.dispatchEvent(clickEvent);
+//       }
+//     }
+//   });
+// });
+// arrowsSlide[1].addEventListener("click", () => {
+//   lastSlid.forEach((slide) => {
+//     if (slide.classList.contains("active")) {
+//       let el = slide.previousElementSibling;
+//       if (el == null) {
+//         lastSlid[2].dispatchEvent(clickEvent);
+//         lastSlid[2].dispatchEvent(clickEvent);
+//       } else {
+//         el.dispatchEvent(clickEvent);
+//         el.dispatchEvent(clickEvent);
+//       }
+//     }
+//   });
+// });
 
-// var list = [
-//     "AlesteCombi",
-//     "Ashley",
-//     "Cryo-ZetAirCooling",
-//     "Einxelx2",
-//     "Endolift",
-//     "EpCare-Zenith",
-//     "Erica",
-//     "Hipro-V",
-//     "HRZ-6000Diodelaser",
-//     "Hydrafacial",
-//     "J-Plasma",
-//     "LD2DiodeLaser",
-//     "LipoSurg",
-//     "Med-Jet",
-//     "OrchestraCool",
-//     "Plasmabt",
-//     "Q10",
-//     "Smaxelco2laser",
-//     "Utims",
-//   ],
-//   list2 = [
-//     "AlesteCombi",
-//     "Ashley",
-//     "Cryo-ZetAirCooling",
-//     "Einxelx2",
-//     "Endolift",
-//     "EpCare-Zenith",
-//     "Erica",
-//     "Hipro-V",
-//     "HRZ-6000Diodelaser",
-//     "Hydrafacial",
-//     "J-Plasma",
-//     "LD2DiodeLaser",
-//     "LipoSurg",
-//     "Med-Jet",
-//     "OrchestraCool",
-//     "Plasmabt",
-//     "Q10",
-//     "Smaxelco2laser",
-//     "Utims",
-//   ];
-// var list3 = new Set();
-// list.forEach((l1) => {
-//     if (!list2.includes(l1)) {
-//       list3.add(l1+".pdf");
-//     }
-// });
-// list2.forEach((l2) => {
-//     if (!list.includes(l2)) {
-//       list3.add(l2+".png");
-//     }
-// });
-// console.log(list3);
+

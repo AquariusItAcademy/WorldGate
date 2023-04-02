@@ -248,6 +248,8 @@ section .mapg .contact-address p span {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
+  background-color: #e3e3e399;
+  padding: 10px 0;
 }
 
 .cardAq {

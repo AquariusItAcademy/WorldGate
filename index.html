@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="css/media-queries.css" />
     <!-- Aghyad Fill  -->
     <link rel="stylesheet" href="css/aghyad.css" />
+    <!-- Slide  -->
+    <link rel="stylesheet" href="css/slide.css" />
 
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -121,108 +123,55 @@
         Home Slider
         ====================================  -->
 
-    <section id="slider">
-      <div
-        id="carousel-example-generic"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <!-- Indicators bullet -->
-        <ul id="arrowSlideAq">
-          <li class="arrow"><i class="fa-solid fa-chevron-left"></i></li>
-          <li class="arrow"><i class="fa-solid fa-chevron-right"></i></li>
-        </ul>
-        <ol class="carousel-indicators" style="visibility: hidden;">
-          <li
-            data-target="#carousel-example-generic"
-            data-slide-to="0"
-            class="videoLogo AqSlid active"
-          ></li>
-          <li class="AqSlid" data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li class="AqSlid" data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <!-- End Indicators bullet -->
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <!-- single slide -->
-          <div class="videoLogo AqElSlid item baneer active" style="position: relative">
-            <div
-              style="
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                z-index: -1;
-              "
-            >
-              <video autoplay muted loop>
-                <source src="video/2.mp4"/>
-              </video>
-            </div>
-          </div>
-          <!-- end single slide -->
-          <!-- single slide -->
-          <div
-            class="item AqElSlid baneer_1"
-            style="background-image: url(img/banner.jpg)"
-          >
-            <div class="carousel-caption">
-              <h2
-                data-wow-duration="700ms"
-                data-wow-delay="500ms"
-                class="wow bounceInDown animated headtext"
-              >
-                World Gate<span> Medical</span>!
-              </h2>
-              <h3
-                data-wow-duration="1000ms"
-                class="wow slideInLeft animated headtext"
-              >
+    <section class="slider-container">
+      <ul class="ulArrow">
+        <li class="slidersArrow">
+          <i class="fa-solid fa-chevron-circle-left"></i>
+        </li>
+        <li class="slidersArrow">
+          <i class="fa-solid fa-chevron-circle-right"></i>
+        </li>
+      </ul>
+      <div class="sliders">
+        <div class="slide">
+          <video autoplay muted loop style="width: 100%; height: 100%">
+            <source src="video/2.mp4" />
+          </video>
+        </div>
+        <div class="slide">
+          <img src="img/banner.jpg" alt="banner" />
+          <ul>
+            <li>
+              <h2>World Gate<span class="color">Medical</span>!</h2>
+            </li>
+            <li>
+              <h3>
                 The <span class="color">leading</span> and
                 <span class="color">first</span> company in the field of
                 cosmetic materials and devices
               </h3>
-              <p
-                data-wow-duration="1000ms"
-                class="wow slideInRight animated headtext"
-              >
-                The Home Of Beauty
-              </p>
-            </div>
-          </div>
-          <!-- end single slide -->
-
-          <!-- single slide -->
-          <div
-            class="item AqElSlid baneer_2"
-            style="background-image: url(img/banner-1.jpg)"
-          >
-            <div class="carousel-caption">
-              <h2
-                data-wow-duration="500ms"
-                data-wow-delay="500ms"
-                class="wow bounceInDown animated headtext"
-              >
-                World Gate<span> Medical</span>!
-              </h2>
-              <h3
-                data-wow-duration="500ms"
-                class="wow slideInLeft animated headtext"
-              >
+            </li>
+            <li>
+              <p>The Home Of Beauty</p>
+            </li>
+          </ul>
+        </div>
+        <div class="slide">
+          <img src="img/banner-1.jpg" alt="banner-1" />
+          <ul>
+            <li>
+              <h2>World Gate<span> Medical</span>!</h2>
+            </li>
+            <li>
+              <h3>
                 <span class="color">Best</span> Products Affordable price Simply
               </h3>
-              <p
-                data-wow-duration="500ms"
-                class="wow slideInRight animated headtext"
-              >
-                The Home Of Beauty
-              </p>
-            </div>
-          </div>
-          <!-- end single slide -->
+            </li>
+            <li>
+              <p>The Home Of Beauty</p>
+            </li>
+          </ul>
         </div>
-        <!-- End Wrapper for slides -->
       </div>
     </section>
 
@@ -324,8 +273,7 @@
             <h2>Meet Our Team</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
           </div>
-          <div id="Employees_Container">
-          </div>
+          <div id="Employees_Container"></div>
         </div>
       </div>
     </section>
@@ -678,6 +626,8 @@
     <script src="js/custom.js"></script>
     <!-- Aquarius JavaScript -->
     <script src="js/prodactus.js"></script>
+    <!-- Aquarius slide -->
+    <script src="js/slide.js"></script>
 
     <script type="text/javascript">
       $(function () {
