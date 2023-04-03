@@ -368,28 +368,28 @@ var Devices = [
       num: "+964 751 235 4023",
     },
     {
-      name: "Abdulsalam Muhammad",
-      postion: "Sales Manager",
-      city: "Sulimanya",
-      num: "+964 750 852 8458",
-    },
-    {
-      name: "Atayyb Alzohery",
-      postion: "Sales Manager",
-      city: "Diyala",
-      num: "+964 772 511 1466",
-    },
-    {
       name: "Jumaa Othman",
       postion: "Sales Manager",
       city: "Baghdad",
       num: "+964 774 443 0303",
     },
     {
+      name: "Abdulsalam Muhammad",
+      postion: "Sales Manager",
+      city: "Sulimanya",
+      num: "+964 750 852 8458",
+    },
+    {
       name: "Yehya Ahmad",
       postion: "Sales Manager",
       city: "Dohuk",
       num: "+964 750 303 2672",
+    },
+    {
+      name: "Atayyb Alzohery",
+      postion: "Sales Manager",
+      city: "Diyala",
+      num: "+964 772 511 1466",
     },
     {
       name: "Siyamend Alsino",
@@ -424,12 +424,6 @@ var Devices = [
       address: "Dohuk, Nohdra, Branch opposite to first Iraq bank new building",
       number: "+964 750 303 2672",
     },
-    // {
-    //   city: "Diyala",
-    //   map: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3245.3008714153634!2d45.453234684744075!3d35.57096498022013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDM0JzE1LjUiTiA0NcKwMjcnMDMuOCJF!5e0!3m2!1sar!2siq!4v1677451935912!5m2!1sar!2siq",
-    //   address: "Diyala, Al Husseniniya Street",
-    //   number: "+964 772 511 1466",
-    // },
   ],
   prodactuscontainer = document.querySelector("#Devices_Container"),
   employeescontainer = document.querySelector("#Employees_Container"),
@@ -565,38 +559,3 @@ maps.forEach((map) => {
     </div>
   `;
 });
-// var clickEvent = new MouseEvent("click", {
-//   view: window,
-//   bubbles: true,
-//   cancelable: false,
-// });
-// arrowsSlide[0].addEventListener("click", () => {
-//   lastSlid.forEach((slide) => {
-//     if (slide.classList.contains("active")) {
-//       let el = slide.nextElementSibling;
-//       if (el == null) {
-//         lastSlid[0].dispatchEvent(clickEvent);
-//         lastSlid[0].dispatchEvent(clickEvent);
-//       } else {
-//         el.dispatchEvent(clickEvent);
-//         el.dispatchEvent(clickEvent);
-//       }
-//     }
-//   });
-// });
-// arrowsSlide[1].addEventListener("click", () => {
-//   lastSlid.forEach((slide) => {
-//     if (slide.classList.contains("active")) {
-//       let el = slide.previousElementSibling;
-//       if (el == null) {
-//         lastSlid[2].dispatchEvent(clickEvent);
-//         lastSlid[2].dispatchEvent(clickEvent);
-//       } else {
-//         el.dispatchEvent(clickEvent);
-//         el.dispatchEvent(clickEvent);
-//       }
-//     }
-//   });
-// });
-
-
