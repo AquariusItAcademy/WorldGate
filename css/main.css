@@ -87,7 +87,8 @@ h6 {
 
 span.color {
   color: var(--color-3);
-  text-shadow: 0 0px 5px var(--color-light);
+  font-weight: 900;
+  text-shadow: 0 0px 4px var(--color-2);
 }
 
 body > section,
@@ -501,6 +502,12 @@ margin-top: 15px;
 .member-thumb {
   width: 273px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member-thumb img {
+  width: 60%;
 }
 
 .member-thumb .overlay h5 {
@@ -582,17 +589,24 @@ margin-top: 15px;
 
 .counters-item {
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 .counters-item i {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #737c85;
   border-radius: 50%;
   color: #fff;
-  display: inline-block;
-  height: 120px;
-  margin: 0 0 35px;
-  padding: 40px 0 0;
-  width: 120px;
+  padding: 40px;
+  font-size: 4em;
 }
 
 .counters-item strong {

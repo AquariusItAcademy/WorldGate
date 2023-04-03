@@ -251,7 +251,12 @@ section .mapg .contact-address p span {
   background-color: #e3e3e399;
   padding: 10px 0;
 }
-
+#Employees_Container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .cardAq {
   display: flex;
   justify-content: center;
