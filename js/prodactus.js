@@ -429,7 +429,8 @@ var Devices = [
   employeescontainer = document.querySelector("#Employees_Container"),
   arrowsSlide = document.querySelectorAll(".arrow"),
   lastSlid = document.querySelectorAll(".AqSlid"),
-  mapscontainer = document.querySelector("#Map_Container");
+  mapscontainer = document.querySelector("#Map_Container"),
+  sulaymaniVideo = document.querySelector("#sulaymaniVideo");
 
 Devices.forEach((device) => {
   prodactuscontainer.innerHTML += `
@@ -559,3 +560,14 @@ maps.forEach((map) => {
     </div>
   `;
 });
+
+if (screen.width <= 768) {
+  screenWidth = screen.width;
+  sulaymaniVideo.style.width = screenWidth + "px";
+  sulaymaniVideo.style.height = 0.5625 * screenWidth + "px";
+} else {
+  var screenWidth = screen.width * 50 / 100;
+  console.log(screenWidth);
+  sulaymaniVideo.style.width = screenWidth + "px";
+  sulaymaniVideo.style.height = 0.5625 * screenWidth + "px";
+}
