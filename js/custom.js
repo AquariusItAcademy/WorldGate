@@ -33,35 +33,6 @@ $(document).ready(function () {
   });
 
   /* ========================================================================= */
-  /*	Fix Slider Height
-	/* ========================================================================= */
-
-  var slideHeight = $(window).height();
-
-  $("#slider, .carousel.slide, .carousel-inner, .carousel-inner .item").css(
-    "height",
-    slideHeight
-  );
-  
-  if ($(window).width() <= 966) {
-    $(".baneer").css("background-image", "url(img/tablet-banner.png)");
-    $(".baneer_1").css("background-image", "url(img/tablet-banner-1.png)");
-  }
-
-  if ($(window).width() <= 766) {
-    $(".baneer").css("background-image", "url(img/mobile-banner.png)");
-    $(".baneer_1").css("background-image", "url(img/mobile-banner-1.png)");
-  }
-
-  $(window).resize(function () {
-    "use strict",
-      $("#slider, .carousel.slide, .carousel-inner, .carousel-inner .item").css(
-        "height",
-        slideHeight
-      );
-  });
-
-  /* ========================================================================= */
   /*	Portfolio Filtering
 	/* ========================================================================= */
 
